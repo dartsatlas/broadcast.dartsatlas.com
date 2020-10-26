@@ -82,6 +82,14 @@ Display realtime match stats, updated after each throw.
 
 ---
 
+## Match Summary
+
+Display summarized match stats.
+
+![Screenshot of match summary](images/match-summary.jpg)
+
+---
+
 ## Match Creation
 
 Easily set up a singles or doubles match and invite your players to join.
