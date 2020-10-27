@@ -10,7 +10,7 @@ Darts Atlas ([dartsatlas.com](https://www.dartsatlas.com)) provides a full-servi
 - Create individual exhibition matches and invite players to join
 - View detailed match data from the broadcast booth
 
-Want to dive right in? **[Check out our Broadcasting Guide](/guide)**, which provides configuration details and examples for 4 Scenes and 11 Sources in OBS.
+Want to dive right in? **[Check out our Broadcasting Guide](/guide)**, which provides configuration details and examples for 4 Scenes and 9 distinct Sources in OBS.
 
 See the Darts Atlas broadcast experience in-action on the City League Darts YouTube channel at [watch.cityleaguedarts.com](https://watch.cityleaguedarts.com).
 
