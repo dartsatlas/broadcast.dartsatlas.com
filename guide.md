@@ -54,7 +54,7 @@ Append `/broadcast?mode=tv` to your Match URL to render a webpage that contains 
 **FPS:** 30  
 **Refresh browser when scene becomes active:** Enabled
 
-###Scoreboard: Dual-Board
+### Scoreboard: Dual-Board
 
 Append `/broadcast?mode=dual_cam` to your Match URL to render a webpage that contains a classic TV-styled scoreboard, displaying Player 1 above Player 2.
 
