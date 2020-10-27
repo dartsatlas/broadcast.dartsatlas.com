@@ -59,8 +59,8 @@
         "versioned_id": "coreaudio_input_capture",
         "volume": 0.73646610975265503
     },
-    "current_program_scene": "Standings",
-    "current_scene": "Standings",
+    "current_program_scene": "Preview",
+    "current_scene": "Preview",
     "current_transition": "Fade",
     "groups": [
         {
@@ -166,12 +166,22 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Blank Frame": [],
+                "libobs.hide_scene_item.Dart Counts": [],
+                "libobs.hide_scene_item.Stats": [],
+                "libobs.hide_scene_item.TV Scoreboard": [],
+                "libobs.show_scene_item.Blank Frame": [],
+                "libobs.show_scene_item.Dart Counts": [],
+                "libobs.show_scene_item.Stats": [],
+                "libobs.show_scene_item.TV Scoreboard": []
+            },
+            "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Price",
+            "name": "Match (Single-Board)",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -179,35 +189,129 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Users/matt/Desktop/Darts Atlas/Documentation/Broadcasting/Player Previews/price.jpg"
+                "custom_size": false,
+                "id_counter": 6,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": true,
+                        "name": "Blank Frame",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": true,
+                        "name": "Stats",
+                        "pos": {
+                            "x": 407.0,
+                            "y": 80.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.77499997615814209,
+                            "y": 0.77368414402008057
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": true,
+                        "name": "Dart Counts",
+                        "pos": {
+                            "x": 535.0,
+                            "y": 80.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": true,
+                        "name": "TV Scoreboard",
+                        "pos": {
+                            "x": 538.0,
+                            "y": 516.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "MvG",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/Users/matt/Desktop/Darts Atlas/Documentation/Broadcasting/Player Previews/vangerwen.jpg"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -226,7 +330,72 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Dart Counts",
+            "name": "TV Scoreboard",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 130,
+                "restart_when_active": true,
+                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast?mode=tv",
+                "width": 500
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Standings Title",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "font": {
+                    "face": "Play",
+                    "flags": 1,
+                    "size": 72,
+                    "style": "Bold"
+                },
+                "text": "Current Standings"
+            },
+            "sync": 0,
+            "versioned_id": "text_ft2_source_v2",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Match Summary",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -236,11 +405,10 @@
             "settings": {
                 "css": "",
                 "fps": 1,
-                "height": 460,
+                "height": 210,
                 "restart_when_active": true,
-                "shutdown": false,
-                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_dart_counts",
-                "width": 210
+                "url": "https://www.dartsatlas.com/matches/nqOxLHSXrMMq/broadcast_summary",
+                "width": 1280
             },
             "sync": 0,
             "versioned_id": "browser_source",
@@ -262,7 +430,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Stats",
+            "name": "Scoreboard",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -271,10 +439,9 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "css": "",
-                "fps": 1,
-                "height": 240,
+                "height": 120,
                 "restart_when_active": true,
-                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast?mode=dual_cam_stats",
+                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast?mode=dual_cam",
                 "width": 600
             },
             "sync": 0,
@@ -288,16 +455,21 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Blank Frame": [],
+                "libobs.hide_scene_item.MvG": [],
+                "libobs.hide_scene_item.Player Previews Screen": [],
+                "libobs.hide_scene_item.Price": [],
+                "libobs.show_scene_item.Blank Frame": [],
+                "libobs.show_scene_item.MvG": [],
+                "libobs.show_scene_item.Player Previews Screen": [],
+                "libobs.show_scene_item.Price": []
             },
-            "id": "browser_source",
-            "mixers": 255,
+            "id": "scene",
+            "mixers": 0,
             "monitoring_type": 0,
-            "muted": true,
-            "name": "Player Previews Screen",
+            "muted": false,
+            "name": "Preview",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -305,16 +477,129 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "css": "",
-                "fps": 1,
-                "height": 210,
-                "restart_when_active": true,
-                "shutdown": false,
-                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_preview",
-                "width": 360
+                "custom_size": false,
+                "id_counter": 17,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Blank Frame",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 15,
+                        "locked": true,
+                        "name": "MvG",
+                        "pos": {
+                            "x": 670.0,
+                            "y": 122.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 16,
+                        "locked": true,
+                        "name": "Price",
+                        "pos": {
+                            "x": 70.0,
+                            "y": 122.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "Player Previews Screen",
+                        "pos": {
+                            "x": 460.0,
+                            "y": 71.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
-            "versioned_id": "browser_source",
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -324,16 +609,19 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Blank Background": [],
+                "libobs.hide_scene_item.Season Standings": [],
+                "libobs.hide_scene_item.Standings Title": [],
+                "libobs.show_scene_item.Blank Background": [],
+                "libobs.show_scene_item.Season Standings": [],
+                "libobs.show_scene_item.Standings Title": []
             },
-            "id": "browser_source",
-            "mixers": 255,
+            "id": "scene",
+            "mixers": 0,
             "monitoring_type": 0,
-            "muted": true,
-            "name": "Season Standings",
+            "muted": false,
+            "name": "Standings",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -341,16 +629,100 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "css": "",
-                "fps": 1,
-                "height": 510,
-                "restart_when_active": true,
-                "shutdown": false,
-                "url": "https://www.dartsatlas.com/seasons/demo-league-demo-premier-league/broadcast",
-                "width": 740
+                "custom_size": false,
+                "id_counter": 8,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Blank Background",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "Season Standings",
+                        "pos": {
+                            "x": 270.0,
+                            "y": 174.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": true,
+                        "name": "Standings Title",
+                        "pos": {
+                            "x": 386.5,
+                            "y": 98.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.81906300783157349,
+                            "y": 0.81927710771560669
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
-            "versioned_id": "browser_source",
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -359,12 +731,22 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Blank Frame": [],
+                "libobs.hide_scene_item.Dart Counts": [],
+                "libobs.hide_scene_item.Scoreboard": [],
+                "libobs.hide_scene_item.Stats": [],
+                "libobs.show_scene_item.Blank Frame": [],
+                "libobs.show_scene_item.Dart Counts": [],
+                "libobs.show_scene_item.Scoreboard": [],
+                "libobs.show_scene_item.Stats": []
+            },
+            "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Blank Frame",
+            "name": "Match (Dual-Board)",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -372,61 +754,129 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Users/matt/Desktop/City League Production Assets/Summer 2020/Frames/plain.jpg",
-                "unload": true
+                "custom_size": false,
+                "id_counter": 34,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 34,
+                        "locked": true,
+                        "name": "Blank Frame",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Scoreboard",
+                        "pos": {
+                            "x": 407.5,
+                            "y": 71.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.77499997615814209,
+                            "y": 0.77499997615814209
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 8,
+                        "locked": true,
+                        "name": "Stats",
+                        "pos": {
+                            "x": 407.0,
+                            "y": 162.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.77499997615814209,
+                            "y": 0.77368414402008057
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 31,
+                        "locked": true,
+                        "name": "Dart Counts",
+                        "pos": {
+                            "x": 535.0,
+                            "y": 162.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    }
+                ]
             },
             "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Blank Background",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/Users/matt/Desktop/City League Production Assets/Summer 2020/title-frame-transparent.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Board Frame",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/Users/matt/Desktop/City League Production Assets/Summer 2020/Frames/w8-lim-weyland.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -591,22 +1041,12 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Board Frame": [],
-                "libobs.hide_scene_item.Dart Counts": [],
-                "libobs.hide_scene_item.Scoreboard": [],
-                "libobs.hide_scene_item.Stats": [],
-                "libobs.show_scene_item.Board Frame": [],
-                "libobs.show_scene_item.Dart Counts": [],
-                "libobs.show_scene_item.Scoreboard": [],
-                "libobs.show_scene_item.Stats": []
-            },
-            "id": "scene",
+            "hotkeys": {},
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Match (Dual-Board)",
+            "name": "Blank Background",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -614,129 +1054,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "custom_size": false,
-                "id_counter": 33,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Board Frame",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Scoreboard",
-                        "pos": {
-                            "x": 407.5,
-                            "y": 71.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.77499997615814209,
-                            "y": 0.77499997615814209
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 8,
-                        "locked": true,
-                        "name": "Stats",
-                        "pos": {
-                            "x": 407.0,
-                            "y": 162.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.77499997615814209,
-                            "y": 0.77368414402008057
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 31,
-                        "locked": true,
-                        "name": "Dart Counts",
-                        "pos": {
-                            "x": 535.0,
-                            "y": 162.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    }
-                ]
+                "file": "/Users/matt/code/dartsatlas/broadcast.dartsatlas.com/obs_assets/blank-background.jpg"
             },
             "sync": 0,
-            "versioned_id": "scene",
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -745,20 +1066,12 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Blank Background": [],
-                "libobs.hide_scene_item.Season Standings": [],
-                "libobs.hide_scene_item.Standings Title": [],
-                "libobs.show_scene_item.Blank Background": [],
-                "libobs.show_scene_item.Season Standings": [],
-                "libobs.show_scene_item.Standings Title": []
-            },
-            "id": "scene",
+            "hotkeys": {},
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Standings",
+            "name": "Blank Frame",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -766,250 +1079,11 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "custom_size": false,
-                "id_counter": 8,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Blank Background",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Season Standings",
-                        "pos": {
-                            "x": 270.0,
-                            "y": 174.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Standings Title",
-                        "pos": {
-                            "x": 386.5,
-                            "y": 98.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.81906300783157349,
-                            "y": 0.81927710771560669
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "file": "/Users/matt/code/dartsatlas/broadcast.dartsatlas.com/obs_assets/blank-frame.png",
+                "unload": true
             },
             "sync": 0,
-            "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Blank Frame": [],
-                "libobs.hide_scene_item.Player Previews Screen": [],
-                "libobs.show_scene_item.Blank Frame": [],
-                "libobs.show_scene_item.Player Previews Screen": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Preview",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 17,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Blank Frame",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 15,
-                        "locked": true,
-                        "name": "MvG",
-                        "pos": {
-                            "x": 670.0,
-                            "y": 122.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 16,
-                        "locked": true,
-                        "name": "Price",
-                        "pos": {
-                            "x": 70.0,
-                            "y": 122.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Player Previews Screen",
-                        "pos": {
-                            "x": 460.0,
-                            "y": 71.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -1028,7 +1102,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Scoreboard",
+            "name": "Season Standings",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -1037,9 +1111,82 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "css": "",
-                "height": 120,
+                "fps": 1,
+                "height": 510,
                 "restart_when_active": true,
-                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast?mode=dual_cam",
+                "shutdown": false,
+                "url": "https://www.dartsatlas.com/seasons/demo-league-demo-premier-league/broadcast",
+                "width": 740
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Player Previews Screen",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "fps": 1,
+                "height": 210,
+                "restart_when_active": true,
+                "shutdown": false,
+                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_preview",
+                "width": 360
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Stats",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "fps": 1,
+                "height": 240,
+                "restart_when_active": true,
+                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast?mode=dual_cam_stats",
                 "width": 600
             },
             "sync": 0,
@@ -1061,8 +1208,8 @@
             "id": "browser_source",
             "mixers": 255,
             "monitoring_type": 0,
-            "muted": true,
-            "name": "Match Summary",
+            "muted": false,
+            "name": "Dart Counts",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -1072,10 +1219,11 @@
             "settings": {
                 "css": "",
                 "fps": 1,
-                "height": 210,
+                "height": 460,
                 "restart_when_active": true,
-                "url": "https://www.dartsatlas.com/matches/nqOxLHSXrMMq/broadcast_summary",
-                "width": 1280
+                "shutdown": false,
+                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_dart_counts",
+                "width": 210
             },
             "sync": 0,
             "versioned_id": "browser_source",
@@ -1088,11 +1236,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "text_ft2_source",
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Standings Title",
+            "name": "MvG",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -1100,16 +1248,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "font": {
-                    "face": "Play",
-                    "flags": 1,
-                    "size": 72,
-                    "style": "Bold"
-                },
-                "text": "Current Standings"
+                "file": "/Users/matt/code/dartsatlas/broadcast.dartsatlas.com/obs_assets/vangerwen.jpg"
             },
             "sync": 0,
-            "versioned_id": "text_ft2_source_v2",
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -1118,56 +1260,12 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "TV Scoreboard",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "css": "",
-                "height": 130,
-                "restart_when_active": true,
-                "url": "https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast?mode=tv",
-                "width": 500
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Board Frame": [],
-                "libobs.hide_scene_item.Dart Counts": [],
-                "libobs.hide_scene_item.Stats": [],
-                "libobs.hide_scene_item.TV Scoreboard": [],
-                "libobs.show_scene_item.Board Frame": [],
-                "libobs.show_scene_item.Dart Counts": [],
-                "libobs.show_scene_item.Stats": [],
-                "libobs.show_scene_item.TV Scoreboard": []
-            },
-            "id": "scene",
+            "hotkeys": {},
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Match (Single-Board)",
+            "name": "Price",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -1175,129 +1273,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Board Frame",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Stats",
-                        "pos": {
-                            "x": 407.0,
-                            "y": 80.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.77499997615814209,
-                            "y": 0.77368414402008057
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Dart Counts",
-                        "pos": {
-                            "x": 535.0,
-                            "y": 80.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "TV Scoreboard",
-                        "pos": {
-                            "x": 538.0,
-                            "y": 516.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "file": "/Users/matt/code/dartsatlas/broadcast.dartsatlas.com/obs_assets/price.jpg"
             },
             "sync": 0,
-            "versioned_id": "scene",
+            "versioned_id": "image_source",
             "volume": 1.0
         }
     ],

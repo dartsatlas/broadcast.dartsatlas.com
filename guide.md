@@ -38,9 +38,14 @@ In OBS, each *Source* should be added as a _Browser_. This is the easiest way to
 
 ## Sources
 
-Each of the *Sources* listed below are pre-configured in [the Darts Atlas OBS Template Scene Collection](/DA-Scene-Templates.json). Download the linked `.json` file, then import it into OBS as a new Scene Collection.
+Each of the *Sources* listed below are pre-configured in [the Darts Atlas OBS Template Scene Collection](/DA-Scene-Templates.json). Download the linked `.json` file, then import it into OBS as a new Scene Collection. You can also download the following assets and update the corresponding sources. You will need to define the file paths for these assets on your computer in order for OBS to load them into the Scene Collection.
 
-The suggested default settings for a 720x1280 frame are listed here, but broadcasters are encouraged to modify sizing and placements to achieve their desired configuration.
+- Blank Background: [blank-background.jpg](/obs_assets/blank-background.jpg)
+- Blank Frame: [blank-frame.png](/obs_assets/blank-frame.png)
+- Price Preview: [price.jpg](/obs_assets/price.jpg)
+- MvG Preview: [vangerwen.jpg](/obs_assets/vangerwen.jpg)
+
+The suggested default settings for a 720x1280 frame are listed with each Source below, but broadcasters are encouraged to modify sizing and placements to achieve their desired configuration.
 
 Once you have your Sources set up for your first broadcast, the only change you need to make for your next match is to change the Match ID for your match-specific sources. Just copy the ID of the new match, and paste it into all of your browser source URLs to replace the existing match ID.
 
