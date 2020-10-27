@@ -1,6 +1,8 @@
 # Broadcaster's Guide
 
-Darts Atlas provides a number of unique webpages that are designed to be used as _browser sources_ within OBS or similar broadcasting software.
+Darts Atlas provides a number of unique webpages that are designed to be used as _browser sources_ within OBS or similar broadcasting software. This guide lists and describes each of these unique sources, using [the Demo Premier League season](https://www.dartsatlas.com/seasons/demo-league-demo-premier-league) as a reference point. The season has been played into week 2, and the match included in the configuration example is [the in-progress Price vs van Gerwen match](https://www.dartsatlas.com/matches/1xOPQvhLuJh8).
+
+When you are ready for your own production you can replace the Demo season and match URLs with the ones that correspond to your season and match.
 
 ## URLs on Darts Atlas
 
@@ -31,6 +33,8 @@ There are 4 standard scenes you will encounter during a standard broadcast of a 
 4. Match Summary
 
 Each of these _Scences_ are comprised of one or more Darts Atlas _Sources_, that is, a special webpage that displays one specific component of the match broadcast experience.
+
+In OBS, each *Source* should be added as a _Browser_. This is the easiest way to configure your program template, control sizing, and transition between matches.
 
 ## Sources
 
@@ -72,8 +76,6 @@ Append `/broadcast` to your Season URL to render a webpage that contains only th
 
 Append `/broadcast_preview` to your Match URL to render a webpage that contains the season stats for each player.
 
-Coming soon: Integrated player photos
-
 **URL:** `https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_preview`  
 **Width:** 360  
 **Height:** 210  
@@ -109,4 +111,12 @@ Append `/broadcast_summary` to your Match URL to render a webpage that contains 
 **Height:** 240  
 **FPS:** 1  
 **Refresh browser when scene becomes active:** Enabled
+
+## Broadcast Booth
+
+The broadcast booth is not designed to be used as a Source, though you are welcome to use it however you want.
+
+Append `/broadcast_booth` to your Match URL to render a webpage intended be used as a second-screen beside your video feed. Load the page in a full-screen browser.
+
+[https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_booth](https://www.dartsatlas.com/matches/1xOPQvhLuJh8/broadcast_booth)
 

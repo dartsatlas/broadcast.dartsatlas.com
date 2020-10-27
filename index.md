@@ -2,19 +2,21 @@
 
 [hello@dartsatlas.com](mailto:hello@dartsatlas.com)
 
-Darts Atlas ([dartsatlas.com](https://www.dartsatlas.com)) is the best digital scoreboard for broadcasting steel-tip darts. Special web pages and features make it easy to add rich overlays and in-depth game information to your broadcasts, simply by copying and pasting a few URLs.
+Darts Atlas ([dartsatlas.com](https://www.dartsatlas.com)) provides a full-service digital scoreboard for broadcasting steel-tip darts. A single platform provides simple match setup, scorekeeping, stat tracking, public scoreboards, and a suite of broadcasting tools to bring you everything you need to produce a professional, engaging, and informative program.
 
-- Use our single-board or dual-board score bugs
+- Select from a number of scoreboard variants
 - Set up all of your screens for a new match in under 30 seconds
 - Run a league or tournament with automatically-updated leaderboards, brackets, and stats
 - Create individual exhibition matches and invite players to join
-- View detailed match data from the match broadcast booth
+- View detailed match data from the broadcast booth
+
+Want to dive right in? **[Check out our Broadcasting Guide](/guide)**, which provides configuration details and examples for 4 Scenes and 11 Sources in OBS.
 
 See the Darts Atlas broadcast experience in-action on the City League Darts YouTube channel at [watch.cityleaguedarts.com](https://watch.cityleaguedarts.com).
 
-Read on to learn about what Darts Atlas can do for your production.
+Read on to learn more about what Darts Atlas can do for your production.
 
-## Score Bugs
+## Scoreboards
 
 ### 501 Single-Board
 
@@ -52,7 +54,7 @@ Our standard live scoreboard, but for Cricket. If you're into that sort of thing
 
 ### Broadcast Booth
 
-The Broadcast Booth offers deep insights into an in-progress match. If the match is part of a season then the players' season standings and stats will be present at the top. The live scoreboard is embedded on the left side of the screen, while the right side contains realtime match stats updated after each throw.
+The Broadcast Booth is meant to be the broadcaster's view into the match. Designed to be displayed full-screen in a secondary monitor beside your video feed(s), the booth offers valuable insights and full leg history for your match. If the match is part of a season then the players' season standings and stats will be rendered at the top. The live scoreboard is embedded on the left side of the screen, while the right side contains leg counts and match stats.
 
 ![Screenshot of broadcast booth](images/broadcast_booth.png)
 
@@ -84,7 +86,7 @@ Display realtime match stats, updated after each throw.
 
 ## Match Summary
 
-Display summarized match stats.
+Display summarized match stats. Separate stat recap and leg count sources can be used at the producer's discretion.
 
 ![Screenshot of match summary](images/match-summary.jpg)
 
@@ -103,6 +105,17 @@ Easily set up a singles or doubles match and invite your players to join.
 We are in the early process of documenting and expanding support for branded and customized in-game screens.
 
 ---
+
+## Guide
+
+[broadcast.dartsatlas.com/guide](/guide)
+
+## Roadmap
+
+- Player photo generation for match previews
+- Controllabe slide-out animations for scoreboard stats
+- Season schedule scene
+- 1080x1920 configuration settings
 
 ## Contact Darts Atlas
 
