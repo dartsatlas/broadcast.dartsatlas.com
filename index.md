@@ -68,6 +68,14 @@ A special standings-only screen is available to show the leaderboard, which is u
 
 ---
 
+## Season Schedule
+
+A special schedule-only screen is available to show the next 7 days of scheduled matches.
+
+![Screenshot of season schedule](images/season-schedule.jpg)
+
+---
+
 ### Match Preview
 
 Season matches include a preview screen that shows the player season stats in an easy-to-read side-by-side format.

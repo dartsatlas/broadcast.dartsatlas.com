@@ -79,6 +79,16 @@ Append `/broadcast` to your Season URL to render a webpage that contains only th
 **FPS:** 1  
 **Refresh browser when scene becomes active:** Enabled
 
+### Season Schedule
+
+Append `/broadcast_schedule` to your Season URL to render a webpage that contains a list of the next 7 days of scheduled matches.
+
+**URL:** `https://www.dartsatlas.com/seasons/demo-league-demo-premier-league/broadcast_schedule`  
+**Width:** 740  
+**Height:** 510  
+**FPS:** 1  
+**Refresh browser when scene becomes active:** Enabled
+
 ### Match Preview
 
 Append `/broadcast_preview` to your Match URL to render a webpage that contains the season stats for each player.
