@@ -1,17 +1,22 @@
 obs = obslua
 match_hash_id = "#########"
+da_theme_color = "00AE3E"
 base_url = "https://www.dartsatlas.com/matches/"
--- base_url = "https://dartsatlas.ngrok.io/matches/"
 
 function activate(activating)
+  print('activate')
+  print(activating)
   if activated == activating then
+    print('returning')
     return
   end
+  print('did not return')
   activated = activating
 end
 
 function reset(pressed)
   if not pressed then
+--   if pressed then
     return
   end
 
@@ -27,31 +32,47 @@ function reset(pressed)
 -- Scoreboard
 -- Standings
 
+  local theme_color = tostring(da_theme_color)
+
   local match_best_of = obs.obs_get_source_by_name("[DA] Best Of")
   local match_bracket = obs.obs_get_source_by_name("[DA] Bracket")
-  local match_calendar = obs.obs_get_source_by_name("[DA] Calendar")
+--  local match_calendar = obs.obs_get_source_by_name("[DA] Calendar")
   local match_dart_counts = obs.obs_get_source_by_name("[DA] Dart Counts")
-  local match_locations = obs.obs_get_source_by_name("[DA] Locations")
+  local match_location_p1 = obs.obs_get_source_by_name("[DA] Location - P1")
+  local match_location_p2 = obs.obs_get_source_by_name("[DA] Location - P2")
   local match_preview = obs.obs_get_source_by_name("[DA] Match Preview")
   local match_stats = obs.obs_get_source_by_name("[DA] Match Stats")
+  local match_stats_stacked = obs.obs_get_source_by_name("[DA] Match Stats - Stacked")
   local match_summary = obs.obs_get_source_by_name("[DA] Match Summary")
-  local match_names = obs.obs_get_source_by_name("[DA] Names")
-  local match_photos = obs.obs_get_source_by_name("[DA] Photos")
+  local match_name_p1 = obs.obs_get_source_by_name("[DA] Name - P1")
+  local match_name_p2 = obs.obs_get_source_by_name("[DA] Name - P2")
+--[[
+  local match_photo_p1 = obs.obs_get_source_by_name("[DA] Photo - P1")
+  local match_photo_p2 = obs.obs_get_source_by_name("[DA] Photo - P2")
+--]]
   local match_scoreboard = obs.obs_get_source_by_name("[DA] Scoreboard")
+  local match_scoreboard_stacked = obs.obs_get_source_by_name("[DA] Scoreboard - Stacked")
   local match_standings = obs.obs_get_source_by_name("[DA] Standings")
 
   local match_best_of_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_best_of")
   local match_bracket_url = (tostring(base_url) .. tostring(match_hash_id) .. "/bracket")
-  local match_calendar_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_calendar")
-  local match_dart_counts_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_dart_counts")
-  local match_locations_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_locations")
+--  local match_calendar_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_calendar")
+  local match_dart_counts_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_dart_counts?theme_color=" .. tostring(da_theme_color))
+  local match_location_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_location?player=1")
+  local match_location_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_location?player=2")
   local match_preview_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_preview")
   local match_stats_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_stats")
+  local match_stats_stacked_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_tv_stats")
   local match_summary_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_summary")
-  local match_names_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_names")
-  local match_photos_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_photos")
-  local match_schedule_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_schedule")
-  local match_scoreboard_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_dual_cam")
+  local match_name_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_name?player=1")
+  local match_name_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_name?player=2")
+--[[
+  local match_photo_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_photo?player=1")
+  local match_photo_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_photo?player=2")
+--]]
+--   local match_schedule_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_schedule")
+  local match_scoreboard_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_dual_cam?theme_color=" .. tostring(da_theme_color))
+  local match_scoreboard_stacked_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast?mode=tv&theme_color=" .. tostring(da_theme_color))
   local match_standings_url = (tostring(base_url) .. tostring(match_hash_id) .. "/season_standings")
 
   local settings = obs.obs_data_create()
@@ -67,9 +88,9 @@ function reset(pressed)
   obs.obs_source_release(match_bracket)
 
   -- Calendar
-  obs.obs_data_set_string(settings, "url", match_calendar_url)
-  obs.obs_source_update(match_calendar, settings)
-  obs.obs_source_release(match_calendar)
+--  obs.obs_data_set_string(settings, "url", match_calendar_url)
+--  obs.obs_source_update(match_calendar, settings)
+--  obs.obs_source_release(match_calendar)
 
   -- Dart Counts
   obs.obs_data_set_string(settings, "url", match_dart_counts_url)
@@ -77,9 +98,13 @@ function reset(pressed)
   obs.obs_source_release(match_dart_counts)
 
   -- Locations
-  obs.obs_data_set_string(settings, "url", match_locations_url)
-  obs.obs_source_update(match_locations, settings)
-  obs.obs_source_release(match_locations)
+  obs.obs_data_set_string(settings, "url", match_location_p1_url)
+  obs.obs_source_update(match_location_p1, settings)
+  obs.obs_source_release(match_location_p1)
+
+  obs.obs_data_set_string(settings, "url", match_location_p2_url)
+  obs.obs_source_update(match_location_p2, settings)
+  obs.obs_source_release(match_location_p2)
 
   -- Match Preview
   obs.obs_data_set_string(settings, "url", match_preview_url)
@@ -91,30 +116,48 @@ function reset(pressed)
   obs.obs_source_update(match_stats, settings)
   obs.obs_source_release(match_stats)
 
+  obs.obs_data_set_string(settings, "url", match_stats_stacked_url)
+  obs.obs_source_update(match_stats_stacked, settings)
+  obs.obs_source_release(match_stats_stacked)
+
   -- Match Summary
   obs.obs_data_set_string(settings, "url", match_summary_url)
   obs.obs_source_update(match_summary, settings)
   obs.obs_source_release(match_summar)
 
   -- Names
-  obs.obs_data_set_string(settings, "url", match_names_url)
-  obs.obs_source_update(match_names, settings)
-  obs.obs_source_release(match_names)
+  obs.obs_data_set_string(settings, "url", match_name_p1_url)
+  obs.obs_source_update(match_name_p1, settings)
+  obs.obs_source_release(match_name_p1)
+  obs.obs_data_set_string(settings, "url", match_name_p2_url)
+  obs.obs_source_update(match_name_p2, settings)
+  obs.obs_source_release(match_name_p2)
 
   -- Photos
-  obs.obs_data_set_string(settings, "url", match_photos_url)
-  obs.obs_source_update(match_photos, settings)
-  obs.obs_source_release(match_photos)
+--[[
+  obs.obs_data_set_string(settings, "url", match_photo_p1_url)
+  obs.obs_source_update(match_photo_p1, settings)
+  obs.obs_source_release(match_photo_p1)
+  obs.obs_data_set_string(settings, "url", match_photo_p2_url)
+  obs.obs_source_update(match_photo_p2, settings)
+  obs.obs_source_release(match_photo_p2)
+--]]
 
   -- Schedule
+--[[
   obs.obs_data_set_string(settings, "url", match_schedule_url)
   obs.obs_source_update(match_schedule, settings)
   obs.obs_source_release(match_schedule)
+--]]
 
   -- Scoreboard
   obs.obs_data_set_string(settings, "url", match_scoreboard_url)
   obs.obs_source_update(match_scoreboard, settings)
   obs.obs_source_release(match_scoreboard)
+
+  obs.obs_data_set_string(settings, "url", match_scoreboard_stacked_url)
+  obs.obs_source_update(match_scoreboard_stacked, settings)
+  obs.obs_source_release(match_scoreboard_stacked)
 
   -- Standings
   obs.obs_data_set_string(settings, "url", match_standings_url)
@@ -122,16 +165,20 @@ function reset(pressed)
   obs.obs_source_release(match_standings)
 
   obs.obs_data_release(settings)
+
 end
 
 function reset_button_clicked(props, p)
+  activate(false)
+  match_hash_id = obs.obs_data_get_string(settings, "match_hash_id")
+  da_theme_color = obs.obs_data_get_string(settings, "da_theme_color")
   reset(true)
-  return false
 end
 
 function script_properties()
   local props = obs.obs_properties_create()
   obs.obs_properties_add_text(props, "match_hash_id", "Match Hash ID", obs.OBS_TEXT_DEFAULT)
+  obs.obs_properties_add_text(props, "da_theme_color", "Theme Color", obs.OBS_TEXT_DEFAULT)
   obs.obs_properties_add_button(props, "reset_button", "Reset Match", reset_button_clicked)
   return props
 end
@@ -143,5 +190,6 @@ end
 function script_update(settings)
   activate(false)
   match_hash_id = obs.obs_data_get_string(settings, "match_hash_id")
+  da_theme_color = obs.obs_data_get_string(settings, "da_theme_color")
   reset(true)
 end
