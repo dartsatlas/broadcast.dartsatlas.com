@@ -3,7 +3,6 @@ match_hash_id = "#########"
 da_theme_color = "00AE3E"
 da_text_color = "FFFFFF"
 base_url = "https://www.dartsatlas.com/matches/"
--- base_url = "https://dartsatlas.ngrok.io/matches/"
 
 function activate(activating)
   print('activate')
@@ -40,6 +39,9 @@ function reset(pressed)
   local match_bracket = obs.obs_get_source_by_name("[DA] Bracket")
 --  local match_calendar = obs.obs_get_source_by_name("[DA] Calendar")
   local match_dart_counts = obs.obs_get_source_by_name("[DA] Dart Counts")
+  local match_dart_counts_stacked_page_1 = obs.obs_get_source_by_name("[DA] Dart Counts - Stacked - Page 1")
+  local match_dart_counts_stacked_page_2 = obs.obs_get_source_by_name("[DA] Dart Counts - Stacked - Page 2")
+  local match_dart_counts_stacked_page_3 = obs.obs_get_source_by_name("[DA] Dart Counts - Stacked - Page 3")
   local match_location_p1 = obs.obs_get_source_by_name("[DA] Location - P1")
   local match_location_p2 = obs.obs_get_source_by_name("[DA] Location - P2")
   local match_preview = obs.obs_get_source_by_name("[DA] Match Preview")
@@ -48,6 +50,10 @@ function reset(pressed)
   local match_summary = obs.obs_get_source_by_name("[DA] Match Summary")
   local match_name_p1 = obs.obs_get_source_by_name("[DA] Name - P1")
   local match_name_p2 = obs.obs_get_source_by_name("[DA] Name - P2")
+  local match_nationality_p1 = obs.obs_get_source_by_name("[DA] Nationality - P1")
+  local match_nationality_p2 = obs.obs_get_source_by_name("[DA] Nationality - P2")
+  local match_nickname_p1 = obs.obs_get_source_by_name("[DA] Nickname - P1")
+  local match_nickname_p2 = obs.obs_get_source_by_name("[DA] Nickname - P2")
 --[[
   local match_photo_p1 = obs.obs_get_source_by_name("[DA] Photo - P1")
   local match_photo_p2 = obs.obs_get_source_by_name("[DA] Photo - P2")
@@ -60,6 +66,7 @@ function reset(pressed)
   local match_bracket_url = (tostring(base_url) .. tostring(match_hash_id) .. "/bracket?theme_color=" .. tostring(da_theme_color) .. "&text_color=" .. tostring(da_text_color))
 --  local match_calendar_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_calendar")
   local match_dart_counts_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_dart_counts?theme_color=" .. tostring(da_theme_color) .. "&text_color=" .. tostring(da_text_color))
+  local match_dart_counts_stacked_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_tv_dart_counts?theme_color=" .. tostring(da_theme_color) .. "&text_color=" .. tostring(da_text_color))
   local match_location_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_location?player=1")
   local match_location_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_location?player=2")
   local match_preview_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_preview?theme_color=" .. tostring(da_theme_color) .. "&text_color=" .. tostring(da_text_color))
@@ -68,6 +75,10 @@ function reset(pressed)
   local match_summary_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_summary?theme_color=" .. tostring(da_theme_color) .. "&text_color=" .. tostring(da_text_color))
   local match_name_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_name?player=1")
   local match_name_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_name?player=2")
+  local match_nationality_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_nationality?player=1")
+  local match_nationality_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_nationality?player=2")
+  local match_nickname_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_nickname?player=1")
+  local match_nickname_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_nickname?player=2")
 --[[
   local match_photo_p1_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_photo?player=1")
   local match_photo_p2_url = (tostring(base_url) .. tostring(match_hash_id) .. "/broadcast_photo?player=2")
@@ -98,6 +109,18 @@ function reset(pressed)
   obs.obs_data_set_string(settings, "url", match_dart_counts_url)
   obs.obs_source_update(match_dart_counts, settings)
   obs.obs_source_release(match_dart_counts)
+
+  obs.obs_data_set_string(settings, "url", (tostring(match_dart_counts_stacked_url) .. "&page=1"))
+  obs.obs_source_update(match_dart_counts_stacked_page_1, settings)
+  obs.obs_source_release(match_dart_counts_stacked_page_1)
+  
+  obs.obs_data_set_string(settings, "url", (tostring(match_dart_counts_stacked_url) .. "&page=2"))
+  obs.obs_source_update(match_dart_counts_stacked_page_2, settings)
+  obs.obs_source_release(match_dart_counts_stacked_page_2)
+  
+  obs.obs_data_set_string(settings, "url", (tostring(match_dart_counts_stacked_url) .. "&page=3"))
+  obs.obs_source_update(match_dart_counts_stacked_page_3, settings)
+  obs.obs_source_release(match_dart_counts_stacked_page_3)
 
   -- Locations
   obs.obs_data_set_string(settings, "url", match_location_p1_url)
@@ -134,6 +157,22 @@ function reset(pressed)
   obs.obs_data_set_string(settings, "url", match_name_p2_url)
   obs.obs_source_update(match_name_p2, settings)
   obs.obs_source_release(match_name_p2)
+
+  -- Nationalities
+  obs.obs_data_set_string(settings, "url", match_nationality_p1_url)
+  obs.obs_source_update(match_nationality_p1, settings)
+  obs.obs_source_release(match_nationality_p1)
+  obs.obs_data_set_string(settings, "url", match_nationality_p2_url)
+  obs.obs_source_update(match_nationality_p2, settings)
+  obs.obs_source_release(match_nationality_p2)
+
+  -- Nicknames
+  obs.obs_data_set_string(settings, "url", match_nickname_p1_url)
+  obs.obs_source_update(match_nickname_p1, settings)
+  obs.obs_source_release(match_nickname_p1)
+  obs.obs_data_set_string(settings, "url", match_nickname_p2_url)
+  obs.obs_source_update(match_nickname_p2, settings)
+  obs.obs_source_release(match_nickname_p2)
 
   -- Photos
 --[[
