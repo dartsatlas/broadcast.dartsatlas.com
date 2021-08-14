@@ -1,26 +1,7 @@
 obs = obslua
-match_hash_id = "#########"
-da_theme_color = "00AE3E"
-da_text_color = "FFFFFF"
 base_url = "https://www.dartsatlas.com/matches/"
 
-function activate(activating)
-  print('activate')
-  print(activating)
-  if activated == activating then
-    print('returning')
-    return
-  end
-  print('did not return')
-  activated = activating
-end
-
-function reset(pressed)
-  if not pressed then
---   if pressed then
-    return
-  end
-
+function updateMatch()
 -- Bracket
 -- Calendar
 -- Dart Counts
@@ -32,8 +13,6 @@ function reset(pressed)
 -- Photos
 -- Scoreboard
 -- Standings
-
-  local theme_color = tostring(da_theme_color)
 
   local match_best_of = obs.obs_get_source_by_name("[DA] Best Of")
   local match_bracket = obs.obs_get_source_by_name("[DA] Bracket")
@@ -206,24 +185,19 @@ function reset(pressed)
   obs.obs_source_release(match_standings)
 
   obs.obs_data_release(settings)
-
 end
 
-function reset_button_clicked(props, p)
-  activate(false)
-  match_hash_id = obs.obs_data_get_string(settings, "match_hash_id")
-  da_theme_color = obs.obs_data_get_string(settings, "da_theme_color")
-  da_text_color = obs.obs_data_get_string(settings, "da_text_color")
-  reset(true)
+function reset_button_clicked(props, p, settings)
+  updateMatch(settings)
 end
 
 function script_properties()
-  local props = obs.obs_properties_create()
-  obs.obs_properties_add_text(props, "match_hash_id", "Match Hash ID", obs.OBS_TEXT_DEFAULT)
-  obs.obs_properties_add_text(props, "da_theme_color", "Theme Color", obs.OBS_TEXT_DEFAULT)
-  obs.obs_properties_add_text(props, "da_text_color", "Text Color", obs.OBS_TEXT_DEFAULT)
-  obs.obs_properties_add_button(props, "reset_button", "Reset Match", reset_button_clicked)
-  return props
+  local properties = obs.obs_properties_create()
+  obs.obs_properties_add_text(properties, "match_hash_id", "Match Hash ID", obs.OBS_TEXT_DEFAULT)
+  obs.obs_properties_add_text(properties, "da_theme_color", "Theme Color", obs.OBS_TEXT_DEFAULT)
+  obs.obs_properties_add_text(properties, "da_text_color", "Text Color", obs.OBS_TEXT_DEFAULT)
+  obs.obs_properties_add_button(properties, "reset_button", "Apply", reset_button_clicked)
+  return properties
 end
 
 function script_description()
@@ -231,9 +205,7 @@ function script_description()
 end
 
 function script_update(settings)
-  activate(false)
   match_hash_id = obs.obs_data_get_string(settings, "match_hash_id")
   da_theme_color = obs.obs_data_get_string(settings, "da_theme_color")
   da_text_color = obs.obs_data_get_string(settings, "da_text_color")
-  reset(true)
 end
