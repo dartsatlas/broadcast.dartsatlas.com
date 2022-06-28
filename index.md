@@ -25,7 +25,7 @@
 
 These instructions reference files in the Quickstart Guide (download link above).
 
-Full widget inventory and default source settings available at **[broadcast-widgets.dartsatlas.com](https://broadcast-widgets.dartsatlas.com)**.
+Full widget inventory and default source settings available at **[broadcast-widgets.dartsatlas.com](http://broadcast-widgets.dartsatlas.com)**.
 
 ### 1. Confirm your OBS Settings
 
