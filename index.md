@@ -72,6 +72,12 @@ Expand and toggle your Source Groups and Sources to see how each is related to y
 
 ### **Other Considerations**
 
+#### Scoreboard X-Axis Position
+
+The Stacked Scoreboard widget has a blank space on its left side which is used to display a player's last score via a fade-in/fade-out animation. The width of that space is equal to 80% of the height of your scoreboard widget. For example, if you set the standard scoreboard height in HD to the recommended 165px then your left offset will be 132px (165 * 0.8).
+
+Use that number to calculate the appropriate position for the widget on the X-Axis to align it with the middle seam. On a 1080 HD screen, the X-Axis value of the scoreboard should be ((1080 / 2) - 132), which gives you a position of 408px from the left edge of the screen.
+
 #### Network Bandwidth
 
 A successful stream requires a stable and predictable internet connection. An ethernet cable is preferable to a wireless signal, and the upload speed you achieve *on the streaming computer* will determine your maximum possible resolution.
