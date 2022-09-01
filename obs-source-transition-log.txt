@@ -1,0 +1,379 @@
+16:00:42.731: [macOS] Permission for audio device access granted.
+16:00:42.735: [macOS] Permission for video device access granted.
+16:00:42.739: [macOS] Permission for accessibility granted.
+16:00:42.746: [macOS] Permission for screen capture granted.
+16:00:42.746: Rosetta translation used: false
+16:00:42.746: CPU Name: Apple M1 Max
+16:00:42.746: Physical Cores: 10, Logical Cores: 10
+16:00:42.746: Physical Memory: 32768MB Total
+16:00:42.746: OS Name: macOS
+16:00:42.747: OS Version: Version 13.0 (Build 22A5331f)
+16:00:42.747: Kernel Version: 22.1.0
+16:00:42.747: hotkeys-cocoa: Using layout 'com.apple.keylayout.US'
+16:00:42.747: Current Date/Time: 2022-09-01, 16:00:42
+16:00:42.747: Browser Hardware Acceleration: false
+16:00:42.747: Qt Version: 6.3.1 (runtime), 6.3.1 (compiled)
+16:00:42.747: Portable mode: false
+16:00:42.844: OBS 28.0.0-rc2 (mac)
+16:00:42.844: ---------------------------------
+16:00:42.845: ---------------------------------
+16:00:42.845: audio settings reset:
+16:00:42.845: 	samples per sec: 44100
+16:00:42.845: 	speakers:        2
+16:00:42.845: 	max buffering:   1044 milliseconds
+16:00:42.845: 	buffering type:  dynamically increasing
+16:00:42.845: ---------------------------------
+16:00:42.845: Initializing OpenGL...
+16:00:42.881: Loading up OpenGL on adapter Apple Apple M1 Max
+16:00:42.881: OpenGL loaded successfully, version 4.1 Metal - 83, shading language 4.10
+16:00:43.017: ---------------------------------
+16:00:43.017: video settings reset:
+16:00:43.017: 	base resolution:   3840x2160
+16:00:43.017: 	output resolution: 3840x2160
+16:00:43.017: 	downscale filter:  Lanczos
+16:00:43.017: 	fps:               30/1
+16:00:43.017: 	format:            NV12
+16:00:43.017: 	YUV mode:          Rec. 709/Partial
+16:00:43.017: NV12 texture support not available
+16:00:43.017: P010 texture support not available
+16:00:43.017: Audio monitoring device:
+16:00:43.017: 	name: Default
+16:00:43.017: 	id: default
+16:00:43.017: ---------------------------------
+16:00:43.021: No AJA devices found, skipping loading AJA UI plugin
+16:00:43.021: Failed to initialize module 'aja-output-ui'
+16:00:43.023: No AJA devices found, skipping loading AJA plugin
+16:00:43.023: Failed to initialize module 'aja'
+16:00:43.024: Failed to load 'en-US' text for module: 'decklink-captions'
+16:00:43.026: Failed to load 'en-US' text for module: 'decklink-output-ui'
+16:00:43.026: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+16:00:43.026: Failed to initialize module 'decklink'
+16:00:43.141: [VideoToolbox encoder]: Adding VideoToolbox encoders
+16:00:43.159: [obs-browser]: Version 2.18.5
+16:00:43.159: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.61.23+g2fe5a76+chromium-103.0.5060.134 (compiled)
+16:00:43.168: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.0.1 | RPC Version: 1)
+16:00:43.168: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.3.1 | Qt version (run-time): 6.3.1
+16:00:43.168: [obs-websocket] [obs_module_load] Linked ASIO Version: 101201
+16:00:43.170: [obs-websocket] [obs_module_load] Module loaded.
+16:00:43.173: os_dlopen(/Applications/VLC.app/Contents/MacOS/lib/libvlccore.dylib->/Applications/VLC.app/Contents/MacOS/lib/libvlccore.dylib): dlopen(/Applications/VLC.app/Contents/MacOS/lib/libvlccore.dylib, 0x0101): tried: '/Applications/VLC.app/Contents/MacOS/lib/libvlccore.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/Applications/VLC.app/Contents/MacOS/lib/libvlccore.dylib' (no such file), '/Applications/VLC.app/Contents/MacOS/lib/libvlccore.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/Applications/VLC.app/Contents/MacOS/lib/libvlccore.9.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/Applications/VLC.app/Contents/MacOS/lib/libvlccore.9.dylib' (no such file), '/Applications/VLC.app/Contents/MacOS/lib/libvlccore.9.dylib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))
+16:00:43.173: 
+16:00:43.173: [vlc-video]: Couldn't find VLC installation, VLC video source disabled
+16:00:43.173: ---------------------------------
+16:00:43.173:   Loaded Modules:
+16:00:43.173:     vlc-video
+16:00:43.173:     text-freetype2
+16:00:43.173:     rtmp-services
+16:00:43.173:     obs-x264
+16:00:43.173:     obs-websocket
+16:00:43.173:     obs-vst
+16:00:43.173:     obs-transitions
+16:00:43.173:     obs-outputs
+16:00:43.173:     obs-filters
+16:00:43.173:     obs-ffmpeg
+16:00:43.173:     obs-browser
+16:00:43.173:     mac-virtualcam
+16:00:43.173:     mac-videotoolbox
+16:00:43.173:     mac-syphon
+16:00:43.173:     mac-capture
+16:00:43.173:     mac-avcapture
+16:00:43.173:     image-source
+16:00:43.173:     frontend-tools
+16:00:43.173:     decklink-output-ui
+16:00:43.173:     decklink-captions
+16:00:43.173:     coreaudio-encoder
+16:00:43.173: ---------------------------------
+16:00:43.173: ==== Startup complete ===============================================
+16:00:43.254: All scene data cleared
+16:00:43.254: ------------------------------------------------
+16:00:43.288: [obs-scripting]: Loaded lua script: darts-atlas-obs.lua
+16:00:43.560: Source ID 'ios-camera-source' not found
+16:00:43.560: Failed to create source 'Board Cam'!
+16:00:43.560: Source ID 'ios-camera-source' not found
+16:00:43.560: Failed to create source 'Oche Cam'!
+16:00:43.560: Source ID 'vlc_source' not found
+16:00:43.560: Failed to create source 'Advertisements'!
+16:00:43.560: [Media Source 'Swoosh']: settings:
+16:00:43.560: 	input:                   /Users/matt/Desktop/OBS Assets/Swoosh.mp3
+16:00:43.560: 	input_format:            (null)
+16:00:43.560: 	speed:                   100
+16:00:43.560: 	is_looping:              no
+16:00:43.560: 	is_linear_alpha:         no
+16:00:43.560: 	is_hw_decoding:          no
+16:00:43.560: 	is_clear_on_media_end:   no
+16:00:43.560: 	restart_on_activate:     yes
+16:00:43.560: 	close_when_inactive:     no
+16:00:43.560: 	ffmpeg_options:          
+16:00:43.560: Set FFmpeg options: 
+16:00:43.593: adding 46 milliseconds of audio buffering, total audio buffering is now 46 milliseconds (source: Spotify)
+16:00:43.593: 
+16:00:43.874: Source ID 'vlc_source' not found
+16:00:43.874: Failed to create source 'Music Playlist'!
+16:00:43.881: Video Capture Device: Could not initialize device with unique ID '0x83200006e30fef0'
+16:00:43.881: Video Capture Device 3: No device selected
+16:00:44.040: Switched to scene 'Match Summary'
+16:00:44.040: ------------------------------------------------
+16:00:44.040: Loaded scenes:
+16:00:44.040: - scene 'Global Sources':
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'Spotify' (screen_capture)
+16:00:44.040:     - source: 'Safe Areas' (image_source)
+16:00:44.040: - scene 'Black':
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Cameras' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Video Capture Device' (av_capture_input)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'Video Capture Device 3' (av_capture_input_v2)
+16:00:44.040: - scene 'Ads':
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Cameras 2' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:     - source: 'CLD QR Promo 2' (image_source)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'Advertisements' (vlc_source)
+16:00:44.040: - scene 'Booth':
+16:00:44.040:     - source: 'Cameras 3' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Video Capture Device' (av_capture_input)
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'Safe Areas' (image_source)
+16:00:44.040: - scene 'Match Preview':
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Cameras 4' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:     - source: 'Swoosh' (ffmpeg_source)
+16:00:44.040:         - monitoring: monitor and output
+16:00:44.040:     - source: 'Video Mask' (color_source_v3)
+16:00:44.040:     - source: '[DA] Match Preview' (browser_source)
+16:00:44.040:         - show: '[DA] Match Preview Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Match Preview Hide Transition' (slide_transition)
+16:00:44.040:     - source: '[DA] Name - P2' (browser_source)
+16:00:44.040:         - show: '[DA] Name - P2 Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Name - P2 Hide Transition' (slide_transition)
+16:00:44.040:     - source: '[DA] Nickname - P2' (browser_source)
+16:00:44.040:         - show: '[DA] Nickname - P2 Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Nickname - P2 Hide Transition' (slide_transition)
+16:00:44.040:     - source: '[DA] Name - P1' (browser_source)
+16:00:44.040:         - show: '[DA] Name - P1 Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Name - P1 Hide Transition' (slide_transition)
+16:00:44.040:     - source: '[DA] Nickname - P1' (browser_source)
+16:00:44.040:         - show: '[DA] Nickname - P1 Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Nickname - P1 Hide Transition' (slide_transition)
+16:00:44.040:     - source: '[DA] Media Shot - P2' (browser_source)
+16:00:44.040:         - show: '[DA] Media Shot - P2 Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Media Shot - P2 Hide Transition' (slide_transition)
+16:00:44.040:     - source: '[DA] Media Shot - P1' (browser_source)
+16:00:44.040:         - show: '[DA] Media Shot - P1 Show Transition' (slide_transition)
+16:00:44.040:         - hide: '[DA] Media Shot - P1 Hide Transition' (slide_transition)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'CLD QR Promo' (image_source)
+16:00:44.040:         - show: 'CLD QR Promo Show Transition' (fade_transition)
+16:00:44.040:         - hide: 'CLD QR Promo Hide Transition' (fade_transition)
+16:00:44.040:     - source: 'Safe Areas' (image_source)
+16:00:44.040:     - source: 'Spotify' (screen_capture)
+16:00:44.040: - scene 'Match':
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Safe Areas' (image_source)
+16:00:44.040:     - source: 'Cameras 5' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Video Capture Device' (av_capture_input)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:     - source: 'In-Match' (group)
+16:00:44.040:         - hide: 'In-Match Hide Transition' (slide_transition)
+16:00:44.040:         - source: 'Swoosh' (ffmpeg_source)
+16:00:44.040:             - monitoring: monitor and output
+16:00:44.040:         - source: '[DA] Scoreboard - Stacked' (browser_source)
+16:00:44.040:             - show: '[DA] Scoreboard - Stacked Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Scoreboard - Stacked Hide Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Match Round' (browser_source)
+16:00:44.040:         - source: '[DA] Match Stats - Stacked' (browser_source)
+16:00:44.040:             - show: '[DA] Match Stats - Stacked Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Match Stats - Stacked Hide Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Dart Counts - Stacked - Page 1' (browser_source)
+16:00:44.040:             - show: '[DA] Dart Counts - Stacked - Page 1 Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Dart Counts - Stacked - Page 1 Hide Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Dart Counts - Stacked - Page 2' (browser_source)
+16:00:44.040:             - show: '[DA] Dart Counts - Stacked - Page 2 Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Dart Counts - Stacked - Page 2 Hide Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Dart Counts - Stacked - Page 3' (browser_source)
+16:00:44.040:             - show: '[DA] Dart Counts - Stacked - Page 3 Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Dart Counts - Stacked - Page 3 Hide Transition' (slide_transition)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'Advertisements' (vlc_source)
+16:00:44.040:         - hide: 'Advertisements Hide Transition' (fade_transition)
+16:00:44.040:     - source: 'CLD QR Promo' (image_source)
+16:00:44.040:         - show: 'CLD QR Promo Show Transition' (fade_transition)
+16:00:44.040:         - hide: 'CLD QR Promo Hide Transition' (fade_transition)
+16:00:44.040: - scene 'Match Summary':
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Cameras 6' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:     - source: 'Post-Match' (group)
+16:00:44.040:         - source: 'Swoosh' (ffmpeg_source)
+16:00:44.040:             - monitoring: monitor and output
+16:00:44.040:         - source: 'Video Mask' (color_source_v3)
+16:00:44.040:             - show: 'Video Mask Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Match Summary' (browser_source)
+16:00:44.040:             - show: '[DA] Match Summary Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Name - P2' (browser_source)
+16:00:44.040:             - show: '[DA] Name - P2 Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Nickname - P2' (browser_source)
+16:00:44.040:             - show: '[DA] Nickname - P2 Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Name - P1' (browser_source)
+16:00:44.040:             - show: '[DA] Name - P1 Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Nickname - P1' (browser_source)
+16:00:44.040:             - show: '[DA] Nickname - P1 Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Media Shot - P2' (browser_source)
+16:00:44.040:             - show: '[DA] Media Shot - P2 Show Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Media Shot - P1' (browser_source)
+16:00:44.040:             - show: '[DA] Media Shot - P1 Show Transition' (slide_transition)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'CLD QR Promo' (image_source)
+16:00:44.040:         - show: 'CLD QR Promo Show Transition' (fade_transition)
+16:00:44.040:         - hide: 'CLD QR Promo Hide Transition' (fade_transition)
+16:00:44.040: - scene 'Standings':
+16:00:44.040:     - source: 'Cameras 7' (group)
+16:00:44.040:         - source: 'Oche Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Board Cam' (ios-camera-source)
+16:00:44.040:         - source: 'Video Capture Device' (av_capture_input)
+16:00:44.040:     - source: 'Music Playlist' (vlc_source)
+16:00:44.040:     - source: 'Tables' (group)
+16:00:44.040:         - source: '[DA] Order of Merit' (browser_source)
+16:00:44.040:             - show: '[DA] Order of Merit Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Order of Merit Hide Transition' (slide_transition)
+16:00:44.040:         - source: '[DA] Standings' (browser_source)
+16:00:44.040:             - show: '[DA] Standings Show Transition' (slide_transition)
+16:00:44.040:             - hide: '[DA] Standings Hide Transition' (slide_transition)
+16:00:44.040:     - source: 'Ticker' (browser_source)
+16:00:44.040:     - source: 'Advertisements' (vlc_source)
+16:00:44.040:         - hide: 'Advertisements Hide Transition' (fade_transition)
+16:00:44.040:     - source: 'CLD QR Promo' (image_source)
+16:00:44.040:         - show: 'CLD QR Promo Show Transition' (fade_transition)
+16:00:44.040:         - hide: 'CLD QR Promo Hide Transition' (fade_transition)
+16:00:44.040: - scene 'Demo':
+16:00:44.040:     - source: 'Spotify' (screen_capture)
+16:00:44.040: ------------------------------------------------
+16:00:44.136: [obs-websocket] [WebSocketServer::onObsLoaded] WebSocket server is enabled, starting...
+16:00:44.136: [obs-websocket] [WebSocketServer::Start] Not locked to IPv4 bindings
+16:00:44.136: [obs-websocket] [WebSocketServer::ServerRunner] IO thread started.
+16:00:44.136: [obs-websocket] [WebSocketServer::Start] Server started successfully on port 4455. Possible connect address: 10.100.0.6
+16:01:00.007: [VideoToolbox advanced_video_stream: 'h264']: session created with hardware encoding
+16:01:00.020: [VideoToolbox advanced_video_stream: 'h264']: settings:
+16:01:00.020: 	vt_encoder_id          com.apple.videotoolbox.videoencoder.ave.avc
+16:01:00.020: 	rate_control:          CBR
+16:01:00.020: 	bitrate:               30000 (kbps)
+16:01:00.020: 	quality:               0.600000
+16:01:00.020: 	fps_num:               30
+16:01:00.020: 	fps_den:               1
+16:01:00.020: 	width:                 3840
+16:01:00.020: 	height:                2160
+16:01:00.020: 	keyint:                2 (s)
+16:01:00.020: 	limit_bitrate:         off
+16:01:00.020: 	rc_max_bitrate:        2500 (kbps)
+16:01:00.020: 	rc_max_bitrate_window: 1.500000 (s)
+16:01:00.020: 	hw_enc:                on
+16:01:00.020: 	profile:               high
+16:01:00.020: 
+16:01:00.022: [CoreAudio AAC: 'Track1']: settings:
+16:01:00.022: 	mode:          AAC
+16:01:00.022: 	bitrate:       160
+16:01:00.022: 	sample rate:   44100
+16:01:00.022: 	cbr:           on
+16:01:00.022: 	output buffer: 1536
+16:01:00.025: ==== Recording Start ===============================================
+16:01:00.025: [ffmpeg muxer: 'adv_file_output'] Writing file '/Users/matt/Movies/2022-09-01 16-00-59.mkv'...
+16:01:28.399: [ffmpeg muxer: 'adv_file_output'] Output of file '/Users/matt/Movies/2022-09-01 16-00-59.mkv' stopped
+16:01:28.400: Output 'adv_file_output': stopping
+16:01:28.400: Output 'adv_file_output': Total frames output: 842
+16:01:28.400: Output 'adv_file_output': Total drawn frames: 850 (851 attempted)
+16:01:28.400: Output 'adv_file_output': Number of lagged frames due to rendering lag/stalls: 1 (0.1%)
+16:01:28.400: ==== Recording Stop ================================================
+16:03:27.086: ==== Shutting down ==================================================
+16:03:27.094: [obs-scripting]: Unloaded lua script: darts-atlas-obs.lua
+16:03:27.128: All scene data cleared
+16:03:27.128: ------------------------------------------------
+16:03:27.247: [obs-websocket] [obs_module_unload] Shutting down...
+16:03:27.247: [obs-websocket] [WebSocketServer::ServerRunner] IO thread exited.
+16:03:27.247: [obs-websocket] [WebSocketServer::Stop] Server stopped successfully
+16:03:27.248: [obs-websocket] [obs_module_unload] Finished shutting down.
+16:03:27.282: [Scripting] Total detached callbacks: 0
+16:03:27.282: Freeing OBS context data
+16:03:27.282: 1 views remain at shutdown
+16:03:27.286: == Profiler Results =============================
+16:03:27.286: run_program_init: 1533.62 ms
+16:03:27.286:  ┣OBSApp::AppInit: 3.413 ms
+16:03:27.286:  ┃ ┗OBSApp::InitLocale: 0.879 ms
+16:03:27.286:  ┗OBSApp::OBSInit: 1402.31 ms
+16:03:27.286:    ┣obs_startup: 0.906 ms
+16:03:27.286:    ┗OBSBasic::OBSInit: 1304.18 ms
+16:03:27.286:      ┣OBSBasic::InitBasicConfig: 0.146 ms
+16:03:27.286:      ┣OBSBasic::ResetAudio: 0.075 ms
+16:03:27.286:      ┣OBSBasic::ResetVideo: 172.115 ms
+16:03:27.286:      ┣OBSBasic::InitOBSCallbacks: 0.002 ms
+16:03:27.286:      ┣OBSBasic::InitHotkeys: 0.04 ms
+16:03:27.286:      ┣obs_load_all_modules2: 156.273 ms
+16:03:27.286:      ┃ ┣obs_init_module(aja-output-ui): 0.062 ms
+16:03:27.286:      ┃ ┣obs_init_module(aja): 0.044 ms
+16:03:27.286:      ┃ ┣obs_init_module(coreaudio-encoder): 0 ms
+16:03:27.286:      ┃ ┣obs_init_module(decklink-captions): 0 ms
+16:03:27.286:      ┃ ┣obs_init_module(decklink-output-ui): 0 ms
+16:03:27.286:      ┃ ┣obs_init_module(decklink): 0.027 ms
+16:03:27.286:      ┃ ┣obs_init_module(frontend-tools): 1.811 ms
+16:03:27.286:      ┃ ┣obs_init_module(image-source): 0.005 ms
+16:03:27.286:      ┃ ┣obs_init_module(mac-avcapture): 74.15 ms
+16:03:27.286:      ┃ ┣obs_init_module(mac-capture): 0.031 ms
+16:03:27.286:      ┃ ┣obs_init_module(mac-syphon): 0 ms
+16:03:27.286:      ┃ ┣obs_init_module(mac-videotoolbox): 32.421 ms
+16:03:27.286:      ┃ ┣obs_init_module(mac-virtualcam): 0.003 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-browser): 15.936 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-ffmpeg): 0.036 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-filters): 0.013 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-outputs): 0.001 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-transitions): 0.003 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-vst): 0.001 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-websocket): 2.484 ms
+16:03:27.286:      ┃ ┣obs_init_module(obs-x264): 0.003 ms
+16:03:27.286:      ┃ ┣obs_init_module(rtmp-services): 0.455 ms
+16:03:27.286:      ┃ ┣obs_init_module(text-freetype2): 0.012 ms
+16:03:27.286:      ┃ ┗obs_init_module(vlc-video): 0.222 ms
+16:03:27.286:      ┣OBSBasic::ResetOutputs: 5.676 ms
+16:03:27.286:      ┣OBSBasic::CreateHotkeys: 0.025 ms
+16:03:27.286:      ┣OBSBasic::InitService: 0.827 ms
+16:03:27.286:      ┣OBSBasic::InitPrimitives: 0.04 ms
+16:03:27.286:      ┗OBSBasic::Load: 872.647 ms
+16:03:27.286: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.504 ms, 99th percentile=0.002 ms, 100% below 25 ms
+16:03:27.286: audio_thread(Audio): min=0.003 ms, median=0.044 ms, max=12.345 ms, 99th percentile=2.359 ms
+16:03:27.287:  ┗receive_audio: min=0.001 ms, median=0.301 ms, max=12.294 ms, 99th percentile=3.091 ms, 0.173305 calls per parent call
+16:03:27.287:    ┣buffer_audio: min=0 ms, median=0.001 ms, max=0.067 ms, 99th percentile=0.004 ms
+16:03:27.287:    ┗do_encode: min=0.099 ms, median=0.298 ms, max=12.291 ms, 99th percentile=3.088 ms
+16:03:27.287:      ┣encode(Track1): min=0.097 ms, median=0.281 ms, max=6.166 ms, 99th percentile=2.502 ms
+16:03:27.287:      ┗send_packet: min=0 ms, median=0.005 ms, max=11.77 ms, 99th percentile=1.216 ms
+16:03:27.287: obs_graphics_thread(33.3333 ms): min=0.089 ms, median=2.92 ms, max=751.413 ms, 99th percentile=13.403 ms, 99.9184% below 33.333 ms
+16:03:27.287:  ┣tick_sources: min=0 ms, median=0.087 ms, max=751.05 ms, 99th percentile=1.648 ms
+16:03:27.287:  ┣output_frame: min=0.084 ms, median=0.661 ms, max=67.786 ms, 99th percentile=6.719 ms
+16:03:27.287:  ┃ ┣gs_context(video->graphics): min=0.084 ms, median=0.66 ms, max=67.786 ms, 99th percentile=6.348 ms
+16:03:27.287:  ┃ ┃ ┣render_video: min=0.017 ms, median=0.388 ms, max=67.763 ms, 99th percentile=4.809 ms
+16:03:27.287:  ┃ ┃ ┃ ┣render_main_texture: min=0.016 ms, median=0.311 ms, max=15.509 ms, 99th percentile=4.223 ms
+16:03:27.287:  ┃ ┃ ┃ ┣render_convert_texture: min=0.039 ms, median=0.092 ms, max=63.435 ms, 99th percentile=0.345 ms, 0.173328 calls per parent call
+16:03:27.287:  ┃ ┃ ┃ ┗stage_output_texture: min=0.115 ms, median=0.25 ms, max=4.969 ms, 99th percentile=1.355 ms, 0.173328 calls per parent call
+16:03:27.287:  ┃ ┃ ┣gs_flush: min=0.006 ms, median=0.148 ms, max=8.894 ms, 99th percentile=1.908 ms
+16:03:27.287:  ┃ ┃ ┗download_frame: min=0 ms, median=1.205 ms, max=6.313 ms, 99th percentile=2.375 ms, 0.173328 calls per parent call
+16:03:27.287:  ┃ ┗output_video_data: min=0.254 ms, median=0.466 ms, max=5.467 ms, 99th percentile=1.779 ms, 0.173124 calls per parent call
+16:03:27.287:  ┗render_displays: min=0 ms, median=1.442 ms, max=44.709 ms, 99th percentile=11.257 ms
+16:03:27.287: video_thread(video): min=0.727 ms, median=1.244 ms, max=178.64 ms, 99th percentile=10.493 ms
+16:03:27.287:  ┗receive_video: min=0.727 ms, median=1.243 ms, max=175.25 ms, 99th percentile=10.492 ms
+16:03:27.287:    ┗do_encode: min=0.727 ms, median=1.243 ms, max=175.249 ms, 99th percentile=10.492 ms
+16:03:27.287:      ┣encode(advanced_video_stream): min=0.706 ms, median=1.105 ms, max=173.672 ms, 99th percentile=3.526 ms
+16:03:27.287:      ┗send_packet: min=0.004 ms, median=0.144 ms, max=12.9 ms, 99th percentile=7.808 ms
+16:03:27.287: =================================================
+16:03:27.287: == Profiler Time Between Calls ==================
+16:03:27.287: obs_hotkey_thread(25 ms): min=25.026 ms, median=29.385 ms, max=63.008 ms, 2.97153% within ±2% of 25 ms (0% lower, 97.0285% higher)
+16:03:27.287: obs_graphics_thread(33.3333 ms): min=0.77 ms, median=33.339 ms, max=751.419 ms, 26.0045% within ±2% of 33.333 ms (36.4267% lower, 37.5688% higher)
+16:03:27.287: =================================================
+16:03:27.310: Number of memory leaks: 0
